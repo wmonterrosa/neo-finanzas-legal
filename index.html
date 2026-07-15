@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neo Finanzas — Controla tus ingresos y gastos, sin complicarte</title>
+<meta name="description" content="Neo Finanzas es tu app de finanzas personales: registra ingresos y gastos, arma presupuestos, controla tus deudas y registra por voz — todo guardado 100% en tu dispositivo.">
+<link rel="canonical" href="https://www.neofinanzas.app/">
+<meta property="og:title" content="Neo Finanzas — Controla tus ingresos y gastos, sin complicarte">
+<meta property="og:description" content="Registra ingresos y gastos, arma presupuestos, controla tus deudas y registra por voz — todo guardado 100% en tu dispositivo.">
+<meta property="og:url" content="https://www.neofinanzas.app/">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+
+<header class="site-header site-header--landing">
+  <div class="site-header__inner">
+    <a href="#top" class="brand" style="text-decoration:none;">
+      <svg width="24" height="24" viewBox="0 0 130 130" aria-hidden="true">
+        <defs>
+          <linearGradient id="headerBar" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#1565A8" />
+            <stop offset="100%" stop-color="#0D9488" />
+          </linearGradient>
+        </defs>
+        <rect x="10" y="88" width="16" height="30" rx="5" fill="url(#headerBar)" />
+        <rect x="36" y="68" width="16" height="50" rx="5" fill="url(#headerBar)" />
+        <rect x="62" y="46" width="16" height="72" rx="5" fill="url(#headerBar)" />
+        <rect x="88" y="22" width="16" height="96" rx="5" fill="url(#headerBar)" />
+      </svg>
+      <span><span class="neo">Neo</span> <span class="finanzas">Finanzas</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="#funciones">Funciones</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#privacidad">Privacidad</a>
+      <a href="privacidad.html">Legal</a>
+      <a href="#descargar" class="cta-mini">Descargar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top" style="padding:0; max-width:none;">
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section class="hero">
+    <div class="landing-wrap">
+      <div>
+        <span class="hero-kicker">🔒 Tus datos nunca salen de tu dispositivo</span>
+        <h1 class="display">Sabe en qué se va tu dinero, <span class="accent">sin esfuerzo</span></h1>
+        <p class="hero-sub">Neo Finanzas registra tus ingresos y gastos, arma tu presupuesto y controla tus deudas — todo en segundos, todo guardado localmente en tu teléfono. Nada de bancos conectados, nada de anuncios, nada de datos enviados a servidores.</p>
+        <div class="hero-ctas">
+          <a href="#descargar" class="btn btn--primary">Descargar la app</a>
+          <a href="#funciones" class="btn btn--ghost">Ver funciones</a>
+        </div>
+        <div class="hero-trust">
+          <span class="dot"></span> Sin registro de cuenta
+          <span class="dot"></span> Sin conexión bancaria
+          <span class="dot"></span> 19 idiomas
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-chip hero-chip--1"><span class="ic">🏠</span><div><small>Casa</small>-$81.00</div></div>
+        <div class="hero-chip hero-chip--2"><span class="ic">💼</span><div><small>Salario</small>+$1,200.00</div></div>
+        <div class="hero-chip hero-chip--3"><span class="ic">🎙️</span><div><small>Por voz</small>Registrado</div></div>
+        <div class="hero-badge hero-badge--1">
+          <svg width="18" height="18" viewBox="0 0 130 130" aria-hidden="true">
+            <rect x="10" y="88" width="16" height="30" rx="5" fill="#FFFFFF" fill-opacity="0.95" />
+            <rect x="36" y="68" width="16" height="50" rx="5" fill="#FFFFFF" fill-opacity="0.95" />
+            <rect x="62" y="46" width="16" height="72" rx="5" fill="#FFFFFF" />
+            <rect x="88" y="22" width="16" height="96" rx="5" fill="#FFFFFF" />
+          </svg>
+        </div>
+        <div class="hero-badge hero-badge--2">🔒</div>
+        <div class="hero-visual__stage">
+        <div class="phone">
+          <div class="phone__screen">
+            <div class="phone__notch"></div>
+            <div class="phone__header">
+              <svg width="15" height="15" viewBox="0 0 130 130" aria-hidden="true">
+                <rect x="10" y="88" width="16" height="30" rx="5" fill="url(#headerBar)" />
+                <rect x="36" y="68" width="16" height="50" rx="5" fill="url(#headerBar)" />
+                <rect x="62" y="46" width="16" height="72" rx="5" fill="url(#headerBar)" />
+                <rect x="88" y="22" width="16" height="96" rx="5" fill="url(#headerBar)" />
+              </svg>
+              <span class="brand"><span class="neo">Neo</span> <span class="finanzas">Finanzas</span></span>
+            </div>
+            <div class="phone__body">
+              <p class="mock-period">Julio 2026</p>
+              <div class="mock-grid">
+                <div class="mock-tile" style="background:#FF704316; border-color:#FF704545;">
+                  <span class="pct" style="color:#FF7043;">38%</span>
+                  <div class="ic" style="background:#FF704330;">🏠</div>
+                  <div class="tx"><b>CASA</b><span style="color:#FF7043;">-$81</span></div>
+                </div>
+                <div class="mock-tile" style="background:#26A69A16; border-color:#26A69A45;">
+                  <span class="pct" style="color:#26A69A;">100%</span>
+                  <div class="ic" style="background:#26A69A30;">💼</div>
+                  <div class="tx"><b>SALARIO</b><span style="color:#26A69A;">+$1200</span></div>
+                </div>
+                <div class="mock-tile" style="background:#66BB6A16; border-color:#66BB6A45;">
+                  <span class="pct" style="color:#66BB6A;">46%</span>
+                  <div class="ic" style="background:#66BB6A30;">🛒</div>
+                  <div class="tx"><b>SUPER</b><span style="color:#66BB6A;">-$100</span></div>
+                </div>
+                <div class="mock-tile" style="background:#4CAF8216; border-color:#4CAF8245;">
+                  <div class="ic" style="background:#4CAF8230;">🏦</div>
+                  <div class="tx"><b>AHORRO</b><span style="color:#9CA3AF;">—</span></div>
+                </div>
+                <div class="mock-tile" style="background:#EF535016; border-color:#EF535045;">
+                  <div class="ic" style="background:#EF535030;">🍽️</div>
+                  <div class="tx"><b>COMIDA</b><span style="color:#9CA3AF;">—</span></div>
+                </div>
+                <div class="mock-tile" style="background:#EC407A16; border-color:#EC407A45;">
+                  <div class="ic" style="background:#EC407A30;">💊</div>
+                  <div class="tx"><b>SALUD</b><span style="color:#9CA3AF;">—</span></div>
+                </div>
+                <div class="mock-tile" style="background:#78909C16; border-color:#78909C45;">
+                  <div class="ic" style="background:#78909C30;">⛽</div>
+                  <div class="tx"><b>AUTO</b><span style="color:#9CA3AF;">—</span></div>
+                </div>
+                <div class="mock-tile" style="background:#26C6DA16; border-color:#26C6DA45;">
+                  <div class="ic" style="background:#26C6DA30;">🧴</div>
+                  <div class="tx"><b>HIGIENE</b><span style="color:#9CA3AF;">—</span></div>
+                </div>
+                <div class="mock-tile" style="background:#F48FB116; border-color:#F48FB145;">
+                  <span class="pct" style="color:#EC407A;">7%</span>
+                  <div class="ic" style="background:#F48FB130;">👕</div>
+                  <div class="tx"><b>ROPA</b><span style="color:#EC407A;">-$15</span></div>
+                </div>
+                <div class="mock-tile" style="background:#5C6BC016; border-color:#5C6BC045;">
+                  <div class="ic" style="background:#5C6BC030;">🏋️</div>
+                  <div class="tx"><b>GIMNASIO</b><span style="color:#9CA3AF;">—</span></div>
+                </div>
+                <div class="mock-tile" style="background:#42A5F516; border-color:#42A5F545;">
+                  <span class="pct" style="color:#42A5F5;">9%</span>
+                  <div class="ic" style="background:#42A5F530;">🎬</div>
+                  <div class="tx"><b>OCIO</b><span style="color:#42A5F5;">-$20</span></div>
+                </div>
+                <div class="mock-tile" style="background:#D4E15716; border-color:#D4E15745;">
+                  <div class="ic" style="background:#D4E15730;">📱</div>
+                  <div class="tx"><b>TELECOM</b><span style="color:#9CA3AF;">—</span></div>
+                </div>
+                <div class="mock-tile" style="background:#AB47BC16; border-color:#AB47BC45;">
+                  <div class="ic" style="background:#AB47BC30;">🐾</div>
+                  <div class="tx"><b>MASCOTAS</b><span style="color:#9CA3AF;">—</span></div>
+                </div>
+                <div class="mock-tile" style="background:#8D6E6316; border-color:#8D6E6345;">
+                  <div class="ic" style="background:#8D6E6330;">🚕</div>
+                  <div class="tx"><b>TAXI</b><span style="color:#9CA3AF;">—</span></div>
+                </div>
+                <div class="mock-tile" style="background:#FFCA2816; border-color:#FFCA2845;">
+                  <div class="ic" style="background:#FFCA2830;">🎁</div>
+                  <div class="tx"><b>REGALOS</b><span style="color:#9CA3AF;">—</span></div>
+                </div>
+                <div class="mock-tile" style="background:#FFA72616; border-color:#FFA72645;">
+                  <div class="ic" style="background:#FFA72630;">📦</div>
+                  <div class="tx"><b>OTROS</b><span style="color:#9CA3AF;">—</span></div>
+                </div>
+              </div>
+              <div class="mock-summary">
+                <div style="border-color:#E5737328; background:#E5737308; border-top:2.5px solid #E57373;"><small>↓ EGRESOS</small><b style="color:#E57373;">$216</b></div>
+                <div style="border-color:#4CAF8228; background:#4CAF8208; border-top:2.5px solid #4CAF82;"><small>◎ SALDO</small><b style="color:#4CAF82;">+$984</b></div>
+                <div style="border-color:#4CAF8228; background:#4CAF8208; border-top:2.5px solid #4CAF82;"><small>↑ INGRESOS</small><b style="color:#4CAF82;">$1.200</b></div>
+              </div>
+              <div class="mock-fab-row">
+                <div class="mock-fab" style="background:#E57373;">−</div>
+                <div class="mock-fab" style="background:linear-gradient(135deg,#1565A8,#0D9488);">🎙</div>
+                <div class="mock-fab" style="background:#4CAF82;">+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ FEATURES ══════════════════ -->
+  <section id="funciones" class="features">
+    <div class="landing-wrap">
+      <div class="section-head">
+        <span class="eyebrow">Funciones</span>
+        <h2>Todo lo que necesitas para ordenar tu dinero</h2>
+        <p>Sin curva de aprendizaje, sin configuraciones complicadas. Abres la app y ya sabes qué está pasando con tus finanzas.</p>
+      </div>
+
+      <!-- Registro rápido -->
+      <div class="feature-row">
+        <div class="feature-row__text">
+          <span class="eyebrow">Registro diario</span>
+          <h3>Cada ingreso y gasto, categorizado al instante</h3>
+          <p>Toca el botón, elige la categoría y listo. El panel principal se actualiza en el momento y te muestra exactamente cuánto llevas gastado por categoría, tu saldo y el mes en curso.</p>
+          <ul class="feature-row__list">
+            <li>Categorías predefinidas y personalizadas</li>
+            <li>Filtra por día, semana, mes, año o fechas exactas</li>
+            <li>Ícono y color propios para cada categoría</li>
+          </ul>
+        </div>
+        <div class="feature-row__phone">
+          <div class="phone">
+            <div class="phone__screen">
+              <div class="phone__notch"></div>
+              <div class="phone__header">
+                <svg width="15" height="15" viewBox="0 0 130 130" aria-hidden="true"><rect x="10" y="88" width="16" height="30" rx="5" fill="url(#headerBar)" /><rect x="36" y="68" width="16" height="50" rx="5" fill="url(#headerBar)" /><rect x="62" y="46" width="16" height="72" rx="5" fill="url(#headerBar)" /><rect x="88" y="22" width="16" height="96" rx="5" fill="url(#headerBar)" /></svg>
+                <span class="brand"><span class="neo">Neo</span> <span class="finanzas">Finanzas</span></span>
+              </div>
+              <div class="phone__body">
+                <p class="mock-period">13 Jul 2026</p>
+                <div class="mock-grid">
+                  <div class="mock-tile" style="background:#FF704316; border-color:#FF704545;"><div class="ic" style="background:#FF704330;">🏠</div><div class="tx"><b>CASA</b><span style="color:#FF7043;">-$81</span></div></div>
+                  <div class="mock-tile" style="background:#26A69A16; border-color:#26A69A45;"><div class="ic" style="background:#26A69A30;">💼</div><div class="tx"><b>SALARIO</b><span style="color:#26A69A;">+$1200</span></div></div>
+                  <div class="mock-tile" style="background:#66BB6A16; border-color:#66BB6A45;"><div class="ic" style="background:#66BB6A30;">🛒</div><div class="tx"><b>SUPER</b><span style="color:#66BB6A;">-$100</span></div></div>
+                  <div class="mock-tile" style="background:#4CAF8216; border-color:#4CAF8245;"><div class="ic" style="background:#4CAF8230;">🏦</div><div class="tx"><b>AHORRO</b><span style="color:#9CA3AF;">—</span></div></div>
+                  <div class="mock-tile" style="background:#EF535016; border-color:#EF535045;"><div class="ic" style="background:#EF535030;">🍽️</div><div class="tx"><b>COMIDA</b><span style="color:#9CA3AF;">—</span></div></div>
+                  <div class="mock-tile" style="background:#EC407A16; border-color:#EC407A45;"><div class="ic" style="background:#EC407A30;">💊</div><div class="tx"><b>SALUD</b><span style="color:#9CA3AF;">—</span></div></div>
+                  <div class="mock-tile" style="background:#78909C16; border-color:#78909C45;"><div class="ic" style="background:#78909C30;">⛽</div><div class="tx"><b>AUTO</b><span style="color:#9CA3AF;">—</span></div></div>
+                  <div class="mock-tile" style="background:#26C6DA16; border-color:#26C6DA45;"><div class="ic" style="background:#26C6DA30;">🧴</div><div class="tx"><b>HIGIENE</b><span style="color:#9CA3AF;">—</span></div></div>
+                  <div class="mock-tile" style="background:#F48FB116; border-color:#F48FB145;"><div class="ic" style="background:#F48FB130;">👕</div><div class="tx"><b>ROPA</b><span style="color:#9CA3AF;">—</span></div></div>
+                  <div class="mock-tile" style="background:#5C6BC016; border-color:#5C6BC045;"><div class="ic" style="background:#5C6BC030;">🏋️</div><div class="tx"><b>GIMNASIO</b><span style="color:#9CA3AF;">—</span></div></div>
+                  <div class="mock-tile" style="background:#42A5F516; border-color:#42A5F545;"><div class="ic" style="background:#42A5F530;">🎬</div><div class="tx"><b>OCIO</b><span style="color:#9CA3AF;">—</span></div></div>
+                  <div class="mock-tile" style="background:#D4E15716; border-color:#D4E15745;"><div class="ic" style="background:#D4E15730;">📱</div><div class="tx"><b>TELECOM</b><span style="color:#9CA3AF;">—</span></div></div>
+                  <div class="mock-tile" style="background:#AB47BC16; border-color:#AB47BC45;"><div class="ic" style="background:#AB47BC30;">🐾</div><div class="tx"><b>MASCOTAS</b><span style="color:#9CA3AF;">—</span></div></div>
+                  <div class="mock-tile" style="background:#8D6E6316; border-color:#8D6E6345;"><div class="ic" style="background:#8D6E6330;">🚕</div><div class="tx"><b>TAXI</b><span style="color:#9CA3AF;">—</span></div></div>
+                  <div class="mock-tile" style="background:#FFCA2816; border-color:#FFCA2845;"><div class="ic" style="background:#FFCA2830;">🎁</div><div class="tx"><b>REGALOS</b><span style="color:#9CA3AF;">—</span></div></div>
+                  <div class="mock-tile" style="background:#FFA72616; border-color:#FFA72645;"><div class="ic" style="background:#FFA72630;">📦</div><div class="tx"><b>OTROS</b><span style="color:#9CA3AF;">—</span></div></div>
+                </div>
+                <div class="mock-summary">
+                  <div style="border-color:#E5737328; background:#E5737308; border-top:2.5px solid #E57373;"><small>↓ EGRESOS</small><b style="color:#E57373;">$81</b></div>
+                  <div style="border-color:#4CAF8228; background:#4CAF8208; border-top:2.5px solid #4CAF82;"><small>◎ SALDO</small><b style="color:#4CAF82;">+$1.119</b></div>
+                  <div style="border-color:#4CAF8228; background:#4CAF8208; border-top:2.5px solid #4CAF82;"><small>↑ INGRESOS</small><b style="color:#4CAF82;">$1.200</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Presupuesto -->
+      <div class="feature-row reverse">
+        <div class="feature-row__text">
+          <span class="eyebrow">Presupuesto</span>
+          <h3>Ponle una meta a cada categoría y mira cómo se llena</h3>
+          <p>Cada categoría tiene su propio cilindro visual: se va llenando de color a medida que gastas, y cambia de verde a amarillo, naranja o rojo según qué tan cerca estés de tu límite mensual.</p>
+          <ul class="feature-row__list">
+            <li>Metas de gasto por categoría</li>
+            <li>Metas de ahorro para tus depósitos</li>
+            <li>Alertas cuando te acercas al límite</li>
+          </ul>
+        </div>
+        <div class="feature-row__phone">
+          <div class="phone">
+            <div class="phone__screen">
+              <div class="phone__notch"></div>
+              <div class="phone__header">
+                <svg width="15" height="15" viewBox="0 0 130 130" aria-hidden="true"><rect x="10" y="88" width="16" height="30" rx="5" fill="url(#headerBar)" /><rect x="36" y="68" width="16" height="50" rx="5" fill="url(#headerBar)" /><rect x="62" y="46" width="16" height="72" rx="5" fill="url(#headerBar)" /><rect x="88" y="22" width="16" height="96" rx="5" fill="url(#headerBar)" /></svg>
+                <span class="brand"><span class="neo">Neo</span> <span class="finanzas">Presupuesto</span></span>
+              </div>
+              <div class="phone__body">
+                <div class="mock-budget-legend">
+                  <span><i style="background:#10B981;"></i>0-50%</span>
+                  <span><i style="background:#EAB308;"></i>51-75%</span>
+                  <span><i style="background:#F97316;"></i>76-90%</span>
+                  <span><i style="background:#EF4444;"></i>91%+</span>
+                  <span><i style="background:#9CA3AF;"></i>Sin meta</span>
+                </div>
+                <div class="mock-budget-grid" id="budgetGrid"></div>
+                <div class="mock-summary" style="margin-top:12px;">
+                  <div style="border-color:#E5737328; background:#E5737308;"><small>GASTADO</small><b style="color:#E57373;">$563</b></div>
+                  <div style="border-color:#BFDBFE; background:#EFF6FF;"><small>PRESUPUESTO</small><b style="color:#3B82F6;">$992</b></div>
+                  <div style="border-color:#4CAF8228; background:#4CAF8208;"><small>DISPONIBLE</small><b style="color:#4CAF82;">$429</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Control de pagos -->
+      <div class="feature-row">
+        <div class="feature-row__text">
+          <span class="eyebrow">Control de pagos</span>
+          <h3>Nunca se te olvida una deuda o un pago recurrente</h3>
+          <p>Registra tus préstamos, tarjetas y pagos recurrentes. Neo Finanzas te muestra cuánto debes, cuánto has pagado y cuántos días faltan para tu próxima fecha de pago — con recordatorios automáticos.</p>
+          <ul class="feature-row__list">
+            <li>Barra de progreso por cada deuda</li>
+            <li>Recordatorios de pago programados</li>
+            <li>Resumen anual de deudas y pagos</li>
+          </ul>
+        </div>
+        <div class="feature-row__phone">
+          <div class="phone phone--tall">
+            <div class="phone__screen">
+              <div class="phone__notch"></div>
+              <div class="phone__header">
+                <svg width="15" height="15" viewBox="0 0 130 130" aria-hidden="true"><rect x="10" y="88" width="16" height="30" rx="5" fill="url(#headerBar)" /><rect x="36" y="68" width="16" height="50" rx="5" fill="url(#headerBar)" /><rect x="62" y="46" width="16" height="72" rx="5" fill="url(#headerBar)" /><rect x="88" y="22" width="16" height="96" rx="5" fill="url(#headerBar)" /></svg>
+                <span class="brand"><span class="neo">Neo</span> <span class="finanzas">Pagos</span></span>
+              </div>
+              <div class="phone__body">
+                <div class="mock-summary">
+                  <div style="border-color:#E5737328; background:#E5737308;"><small>DEUDA TOTAL</small><b style="color:#E57373;">$52.640</b></div>
+                  <div style="border-color:#4CAF8228; background:#4CAF8208;"><small>PAGADO</small><b style="color:#4CAF82;">$14.360</b></div>
+                  <div style="border-color:#BFDBFE; background:#EFF6FF;"><small>PAGO/MES</small><b style="color:#3B82F6;">$845</b></div>
+                </div>
+                <div class="mock-alert-bar">⚠️ En 2 días · <b>Banco agrícola</b> · $70.00</div>
+                <div class="mock-debt-card">
+                  <div class="mock-debt-top">
+                    <div class="ic">🏦</div>
+                    <div><b>Banco agrícola</b><span>Préstamos</span></div>
+                    <span class="pct">9%</span>
+                  </div>
+                  <div class="mock-bar-track"><div class="mock-bar-fill" style="width:26%;"></div></div>
+                  <div class="mock-debt-foot"><span>$1,300.00 pagado</span><span>$5,000.00 total</span></div>
+                  <div class="mock-debt-detail">
+                    <div><small>DEBE</small><b style="color:#E57373;">$3,700</b></div>
+                    <div><small>MENSUAL</small><b>$70.00</b></div>
+                    <div><small>FECHA</small><b style="color:#E57373;">15 Jul</b></div>
+                  </div>
+                </div>
+                <div class="mock-debt-card mock-debt-card--compact" style="border-top-color:#F59E0B;">
+                  <div class="mock-debt-top">
+                    <div class="ic" style="background:#EDE9FE;">💳</div>
+                    <div><b>Tarjeta Visa</b><span>Tarjetas de crédito</span></div>
+                    <span class="pct">24%</span>
+                  </div>
+                  <div class="mock-bar-track"><div class="mock-bar-fill" style="width:58%; background:#F59E0B;"></div></div>
+                  <div class="mock-debt-foot"><span>$1,160.00 pagado</span><span>$2,000.00 total</span></div>
+                </div>
+                <div class="mock-debt-card mock-debt-card--compact" style="border-top-color:#EF4444;">
+                  <div class="mock-debt-top">
+                    <div class="ic" style="background:#FFF7ED;">🏠</div>
+                    <div><b>Hipoteca casa</b><span>Vivienda</span></div>
+                    <span class="pct">7%</span>
+                  </div>
+                  <div class="mock-bar-track"><div class="mock-bar-fill" style="width:11%;"></div></div>
+                  <div class="mock-debt-foot"><span>$5,000.00 pagado</span><span>$45,000.00 total</span></div>
+                </div>
+                <div class="mock-debt-card mock-debt-card--compact" style="border-top-color:#F59E0B;">
+                  <div class="mock-debt-top">
+                    <div class="ic" style="background:#EFF6FF;">🚗</div>
+                    <div><b>Financiamiento auto</b><span>Transporte</span></div>
+                    <span class="pct">11%</span>
+                  </div>
+                  <div class="mock-bar-track"><div class="mock-bar-fill" style="width:40%; background:#F59E0B;"></div></div>
+                  <div class="mock-debt-foot"><span>$4,800.00 pagado</span><span>$12,000.00 total</span></div>
+                </div>
+                <div class="mock-debt-card mock-debt-card--compact" style="border-top-color:#3B82F6;">
+                  <div class="mock-debt-top">
+                    <div class="ic" style="background:#F0FDF4;">💰</div>
+                    <div><b>Crédito personal</b><span>Deudas personales</span></div>
+                    <span class="pct">18%</span>
+                  </div>
+                  <div class="mock-bar-track"><div class="mock-bar-fill" style="width:70%; background:#3B82F6;"></div></div>
+                  <div class="mock-debt-foot"><span>$2,100.00 pagado</span><span>$3,000.00 total</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alertas y recordatorios -->
+      <div class="feature-row reverse">
+        <div class="feature-row__text">
+          <span class="eyebrow">Alertas inteligentes</span>
+          <h3>Te avisa antes de que se convierta en problema</h3>
+          <p>Neo Finanzas vigila dos cosas por ti: tus fechas de pago y tus límites de presupuesto. Cuando algo se acerca, te lo dice — sin que tengas que estar revisando la app a cada rato.</p>
+          <ul class="feature-row__list">
+            <li>Recordatorio de pago 3 días antes, 1 día antes y el día mismo</li>
+            <li>Aviso escalonado de presupuesto: 51%, 76% y 91% usado</li>
+            <li>Notificaciones locales — no dependen de internet</li>
+          </ul>
+        </div>
+        <div class="feature-row__phone">
+          <div class="phone">
+            <div class="phone__screen">
+              <div class="phone__notch"></div>
+              <div class="phone__header">
+                <svg width="15" height="15" viewBox="0 0 130 130" aria-hidden="true"><rect x="10" y="88" width="16" height="30" rx="5" fill="url(#headerBar)" /><rect x="36" y="68" width="16" height="50" rx="5" fill="url(#headerBar)" /><rect x="62" y="46" width="16" height="72" rx="5" fill="url(#headerBar)" /><rect x="88" y="22" width="16" height="96" rx="5" fill="url(#headerBar)" /></svg>
+                <span class="brand"><span class="neo">Neo</span> <span class="finanzas">Finanzas</span></span>
+              </div>
+              <div class="phone__body">
+                <div class="mock-notif-stack">
+                  <div class="mock-notif">
+                    <div class="dot" style="background:#FEE2E2;">🔴</div>
+                    <div class="body">
+                      <div class="t1">Presupuesto excedido <time>ahora</time></div>
+                      <div class="t2">"Casa": 93% usado. Gastado $93.00 de $100.00.</div>
+                    </div>
+                  </div>
+                  <div class="mock-notif">
+                    <div class="dot" style="background:#FEF3C7;">⚠️</div>
+                    <div class="body">
+                      <div class="t1">Pago mañana <time>9:00 a.m.</time></div>
+                      <div class="t2">Banco agrícola: $70.00 vence mañana. Saldo: $3,700.00</div>
+                    </div>
+                  </div>
+                  <div class="mock-notif">
+                    <div class="dot" style="background:#DBEAFE;">📅</div>
+                    <div class="body">
+                      <div class="t1">Pago en 3 días <time>9:00 a.m.</time></div>
+                      <div class="t2">Tarjeta Visa: $45.00 vence el 18 Jul.</div>
+                    </div>
+                  </div>
+                  <div class="mock-notif">
+                    <div class="dot" style="background:#FEF9C3;">🟡</div>
+                    <div class="body">
+                      <div class="t1">Precaución con tu presupuesto</div>
+                      <div class="t2">"Supermercado": ya llevas el 64% usado.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Voz -->
+      <div class="feature-row">
+        <div class="feature-row__text">
+          <span class="eyebrow">Entrada por voz</span>
+          <h3>Dilo en voz alta y Neo Finanzas lo registra por ti</h3>
+          <p>"Gasté 12 dólares en el restaurante" — y listo, la transacción queda registrada en la categoría correcta, sin tocar el teclado. Ideal para cuando vienes saliendo de una compra y no quieres detenerte a escribir.</p>
+          <ul class="feature-row__list">
+            <li>Reconocimiento de voz nativo, sin apps de terceros</li>
+            <li>Detecta monto, categoría y tipo automáticamente</li>
+            <li>Disponible en varios idiomas</li>
+          </ul>
+        </div>
+        <div class="feature-row__phone">
+          <div class="phone">
+            <div class="phone__screen">
+              <div class="phone__notch"></div>
+              <div class="phone__header">
+                <svg width="15" height="15" viewBox="0 0 130 130" aria-hidden="true"><rect x="10" y="88" width="16" height="30" rx="5" fill="url(#headerBar)" /><rect x="36" y="68" width="16" height="50" rx="5" fill="url(#headerBar)" /><rect x="62" y="46" width="16" height="72" rx="5" fill="url(#headerBar)" /><rect x="88" y="22" width="16" height="96" rx="5" fill="url(#headerBar)" /></svg>
+                <span class="brand"><span class="neo">Neo</span> <span class="finanzas">Finanzas</span></span>
+              </div>
+              <div class="phone__body">
+                <div class="mock-voice">
+                  <div class="mock-voice-chip mock-voice-chip--1">
+                    <span>💡</span>
+                    <div><span class="quote">"Pagué la luz 20 dólares"</span><span class="result">-$20.00</span></div>
+                  </div>
+                  <div class="mock-voice-chip mock-voice-chip--2">
+                    <span>🛒</span>
+                    <div><span class="quote">"Compré leche 3 dólares"</span><span class="result">-$3.00</span></div>
+                  </div>
+                  <div class="mock-voice-chip mock-voice-chip--3">
+                    <span>🍽️</span>
+                    <div><span class="quote">"Gasté 12 en restaurante"</span><span class="result">-$12.00</span></div>
+                  </div>
+                  <div class="mock-voice-chip mock-voice-chip--4">
+                    <span>💼</span>
+                    <div><span class="quote">"Agregar salario 1200"</span><span class="result">+$1,200.00</span></div>
+                  </div>
+                  <div class="mock-voice__center">
+                    <div class="mock-mic">🎙</div>
+                    <span class="mock-voice__label">Escuchando…</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resumen anual -->
+      <div class="feature-row reverse">
+        <div class="feature-row__text">
+          <span class="eyebrow">Resumen anual</span>
+          <h3>Todo el año, resumido en una sola pantalla</h3>
+          <p>Ingresos totales, egresos totales, balance del año y en qué categorías se te fue más el dinero. Un vistazo completo para planear mejor el año que viene.</p>
+          <ul class="feature-row__list">
+            <li>Comparativa de ingresos vs. egresos por mes</li>
+            <li>Top de categorías de gasto</li>
+            <li>Disponible en Panel, Presupuesto y Control de Pagos</li>
+          </ul>
+        </div>
+        <div class="feature-row__phone">
+          <div class="phone">
+            <div class="phone__screen">
+              <div class="phone__notch"></div>
+              <div class="phone__header">
+                <svg width="15" height="15" viewBox="0 0 130 130" aria-hidden="true"><rect x="10" y="88" width="16" height="30" rx="5" fill="url(#headerBar)" /><rect x="36" y="68" width="16" height="50" rx="5" fill="url(#headerBar)" /><rect x="62" y="46" width="16" height="72" rx="5" fill="url(#headerBar)" /><rect x="88" y="22" width="16" height="96" rx="5" fill="url(#headerBar)" /></svg>
+                <span class="brand"><span class="neo">Neo</span> <span class="finanzas">Finanzas</span></span>
+              </div>
+              <div class="phone__body">
+                <p class="mock-period">Resumen Anual 2026</p>
+                <div class="mock-report-row">
+                  <div class="mock-report-box" style="border-color:#A7F3D0; background:#F0FDF4;"><small>INGRESOS</small><b style="color:#10B981;">$14,400</b></div>
+                  <div class="mock-report-box" style="border-color:#FCA5A5; background:#FEF2F2;"><small>EGRESOS</small><b style="color:#EF4444;">$9,120</b></div>
+                </div>
+                <div class="mock-report-box" style="border-color:#BFDBFE; background:#EFF6FF; margin-top:5px;"><small>BALANCE ANUAL</small><b style="color:#3B82F6;">+$5,280</b></div>
+                <div style="margin-top:10px;">
+                  <div class="mock-cat-row"><span>🏠</span><b>Casa</b><span style="font-weight:800;">$2,340</span></div>
+                  <div class="mock-cat-row"><span>🛒</span><b>Supermercado</b><span style="font-weight:800;">$1,890</span></div>
+                  <div class="mock-cat-row"><span>🎬</span><b>Entretenimiento</b><span style="font-weight:800;">$740</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════ CÓMO FUNCIONA ══════════════════ -->
+  <section id="como-funciona" class="steps">
+    <div class="landing-wrap">
+      <div class="section-head">
+        <span class="eyebrow">Cómo funciona</span>
+        <h2>De cero a organizado en tres pasos</h2>
+        <p>No hay curva de aprendizaje. Así de simple es empezar.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Registra</h3>
+          <p>Toca el botón +, habla o edita una transacción existente. Ingresa el monto y listo.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Categoriza</h3>
+          <p>Elige entre las categorías ya listas o crea las tuyas propias con tu propio ícono.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Visualiza</h3>
+          <p>Mira tu panel, tu presupuesto y tu resumen anual actualizarse al instante.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ PRIVACIDAD ══════════════════ -->
+  <section id="privacidad" class="trust-band">
+    <div class="landing-wrap">
+      <div class="trust-card">
+        <div>
+          <h2>Tus finanzas son tuyas. Punto.</h2>
+          <p>Neo Finanzas no tiene servidores, no vende tus datos porque no los tiene, y no necesita que te registres con un correo. Todo lo que ingresas se queda en tu propio teléfono.</p>
+          <a href="privacidad.html" class="btn btn--primary">Leer la Política de Privacidad completa</a>
+        </div>
+        <ul class="trust-list">
+          <li><span class="ic">🔒</span> Almacenamiento 100% local, ni un solo dato en la nube</li>
+          <li><span class="ic">🚫</span> Sin publicidad, sin SDKs de rastreo, sin Google Analytics</li>
+          <li><span class="ic">🏦</span> No requiere conectar tu cuenta bancaria</li>
+          <li><span class="ic">🗑️</span> Borra todos tus datos cuando quieras, en un toque</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CTA FINAL ══════════════════ -->
+  <section id="descargar" class="final-cta">
+    <div class="landing-wrap">
+      <h2>Empieza a organizar tus finanzas hoy</h2>
+      <p>Gratis, sin anuncios, sin cuentas que crear.</p>
+      <div class="hero-ctas" style="justify-content:center;">
+        <a href="mailto:soporte@neofinanzas.app?subject=Quiero%20Neo%20Finanzas" class="btn btn--primary">Solicitar acceso</a>
+        <a href="terminos.html" class="btn btn--ghost">Ver Términos de Uso</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer-landing">
+  <div class="landing-wrap">
+    <div>
+      <div class="brand">
+        <svg width="22" height="22" viewBox="0 0 130 130" aria-hidden="true">
+          <defs>
+            <linearGradient id="headerBarFooter" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#5FD9CC" />
+              <stop offset="100%" stop-color="#1565A8" />
+            </linearGradient>
+          </defs>
+          <rect x="10" y="88" width="16" height="30" rx="5" fill="url(#headerBarFooter)" />
+          <rect x="36" y="68" width="16" height="50" rx="5" fill="url(#headerBarFooter)" />
+          <rect x="62" y="46" width="16" height="72" rx="5" fill="url(#headerBarFooter)" />
+          <rect x="88" y="22" width="16" height="96" rx="5" fill="url(#headerBarFooter)" />
+        </svg>
+        <span><span>Neo</span> <span class="finanzas">Finanzas</span></span>
+      </div>
+      <p class="tag">Una app de organización financiera personal. No es un banco, no procesa pagos ni ofrece asesoría de inversión.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Producto</h4>
+      <ul>
+        <li><a href="#funciones">Funciones</a></li>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#privacidad">Privacidad</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="terminos.html">Términos de Uso</a></li>
+        <li><a href="privacidad.html">Política de Privacidad</a></li>
+        <li><a href="mailto:soporte@neofinanzas.app">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Neo Finanzas. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+// Recreación fiel del componente GlassCylinder de src/screens/BudgetScreen.tsx
+// (mismas paletas, mismos gradientes y formas SVG, sin la animación de llenado).
+function glassCylinderSVG(palette, pct, idx, labelOverride) {
+  var W = 26, RX = 12, RY = 3, BODY_H = 34;
+  var SVG_H = RY + BODY_H + RY;
+  var fillRatio = Math.min(pct / 100, 1);
+  var fillH = fillRatio * BODY_H;
+  var fillY = RY + (BODY_H - fillH);
+  var cx = W / 2;
+  var gId = 'fg' + idx, lId = 'fl' + idx, glowId = 'gw' + idx, edgeId = 'ed' + idx;
+  var gel = fillH > 1 ? (
+    '<rect x="3" y="' + fillY + '" width="' + (W - 6) + '" height="' + fillH + '" fill="url(#' + lId + ')" />' +
+    '<rect x="3" y="' + fillY + '" width="' + (W - 6) + '" height="' + fillH + '" fill="url(#' + glowId + ')" />' +
+    '<rect x="3" y="' + fillY + '" width="3" height="' + fillH + '" fill="' + palette[0] + '" fill-opacity="0.15" />' +
+    '<rect x="' + (W - 6) + '" y="' + fillY + '" width="3" height="' + fillH + '" fill="' + palette[0] + '" fill-opacity="0.12" />' +
+    '<ellipse cx="' + cx + '" cy="' + (RY + BODY_H) + '" rx="' + (RX - 2) + '" ry="' + (RY - 1) + '" fill="' + palette[0] + '" fill-opacity="0.75" />' +
+    '<ellipse cx="' + cx + '" cy="' + fillY + '" rx="' + (RX - 3) + '" ry="' + Math.max(1.5, RY - 1.5) + '" fill="' + palette[1] + '" fill-opacity="0.50" />' +
+    '<ellipse cx="' + cx + '" cy="' + fillY + '" rx="' + (RX - 3) + '" ry="' + Math.max(1.5, RY - 1.5) + '" fill="none" stroke="' + palette[0] + '" stroke-opacity="0.30" stroke-width="1" />' +
+    '<ellipse cx="' + (cx - 2) + '" cy="' + (fillY - 0.5) + '" rx="' + (RX * 0.30) + '" ry="' + Math.max(0.8, RY * 0.35) + '" fill="#FFFFFF" fill-opacity="0.45" />'
+  ) : '';
+  var capFill = fillH > 1 ? palette[0] : 'rgba(230,235,240,0.30)';
+  var capOpacity = fillH > 1 ? 0.55 : 1;
+  return (
+    '<svg width="' + W + '" height="' + (SVG_H + 4) + '" viewBox="0 0 ' + W + ' ' + (SVG_H + 4) + '">' +
+      '<defs>' +
+        '<linearGradient id="' + gId + '" x1="0%" y1="0%" x2="100%" y2="0%">' +
+          '<stop offset="0%" stop-color="#888888" stop-opacity="0.30"/><stop offset="4%" stop-color="#CCCCCC" stop-opacity="0.18"/>' +
+          '<stop offset="15%" stop-color="#FFFFFF" stop-opacity="0.12"/><stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.04"/>' +
+          '<stop offset="85%" stop-color="#FFFFFF" stop-opacity="0.08"/><stop offset="96%" stop-color="#AAAAAA" stop-opacity="0.14"/>' +
+          '<stop offset="100%" stop-color="#666666" stop-opacity="0.22"/>' +
+        '</linearGradient>' +
+        '<linearGradient id="' + lId + '" x1="0%" y1="100%" x2="0%" y2="0%">' +
+          '<stop offset="0%" stop-color="' + palette[1] + '" stop-opacity="0.92"/><stop offset="100%" stop-color="' + palette[1] + '" stop-opacity="0.88"/>' +
+        '</linearGradient>' +
+        '<linearGradient id="' + glowId + '" x1="0%" y1="0%" x2="100%" y2="0%">' +
+          '<stop offset="0%" stop-color="' + palette[0] + '" stop-opacity="0.15"/><stop offset="20%" stop-color="#FFFFFF" stop-opacity="0.12"/>' +
+          '<stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.28"/><stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.25"/>' +
+          '<stop offset="80%" stop-color="#FFFFFF" stop-opacity="0.08"/><stop offset="100%" stop-color="' + palette[0] + '" stop-opacity="0.10"/>' +
+        '</linearGradient>' +
+        '<linearGradient id="' + edgeId + '" x1="0%" y1="0%" x2="100%" y2="0%">' +
+          '<stop offset="0%" stop-color="#999999" stop-opacity="0.35"/><stop offset="8%" stop-color="#CCCCCC" stop-opacity="0.10"/>' +
+          '<stop offset="92%" stop-color="#CCCCCC" stop-opacity="0.08"/><stop offset="100%" stop-color="#888888" stop-opacity="0.28"/>' +
+        '</linearGradient>' +
+      '</defs>' +
+      '<ellipse cx="' + cx + '" cy="' + (SVG_H + 1) + '" rx="' + (RX - 2) + '" ry="3" fill="rgba(0,0,0,0.10)" />' +
+      '<rect x="2" y="' + RY + '" width="' + (W - 4) + '" height="' + BODY_H + '" fill="rgba(240,245,250,0.25)" />' +
+      '<rect x="0.5" y="' + RY + '" width="' + (W - 1) + '" height="' + BODY_H + '" fill="url(#' + edgeId + ')" />' +
+      '<rect x="1" y="' + RY + '" width="' + (W - 2) + '" height="' + BODY_H + '" fill="url(#' + gId + ')" />' +
+      gel +
+      '<rect x="0" y="' + RY + '" width="1.8" height="' + BODY_H + '" fill="rgba(180,190,200,0.35)" />' +
+      '<rect x="' + (W - 1.8) + '" y="' + RY + '" width="1.8" height="' + BODY_H + '" fill="rgba(150,160,170,0.28)" />' +
+      '<rect x="0" y="' + RY + '" width="' + W + '" height="' + BODY_H + '" fill="none" stroke="rgba(200,210,220,0.50)" stroke-width="1" />' +
+      '<ellipse cx="' + cx + '" cy="' + (RY + BODY_H) + '" rx="' + (RX + 1) + '" ry="' + (RY + 1) + '" fill="rgba(200,205,210,0.30)" stroke="rgba(180,185,190,0.40)" stroke-width="1.5" />' +
+      '<ellipse cx="' + cx + '" cy="' + (RY + BODY_H) + '" rx="' + (RX - 1) + '" ry="' + (RY - 0.5) + '" fill="' + capFill + '" fill-opacity="' + capOpacity + '" />' +
+      '<ellipse cx="' + cx + '" cy="' + RY + '" rx="' + (RX + 1) + '" ry="' + (RY + 1) + '" fill="rgba(220,225,230,0.40)" stroke="rgba(200,210,220,0.55)" stroke-width="1.5" />' +
+      '<ellipse cx="' + cx + '" cy="' + RY + '" rx="' + RX + '" ry="' + RY + '" fill="rgba(245,248,252,0.65)" stroke="rgba(220,230,240,0.80)" stroke-width="1" />' +
+      '<ellipse cx="' + (cx - 1) + '" cy="' + (RY - 0.5) + '" rx="' + (RX - 4) + '" ry="' + Math.max(1, RY - 2.5) + '" fill="rgba(255,255,255,0.55)" />' +
+      '<rect x="4" y="' + (RY + 4) + '" width="3.5" height="' + (BODY_H - 8) + '" fill="rgba(255,255,255,0.38)" rx="1.75" />' +
+      '<rect x="9" y="' + (RY + 8) + '" width="1.3" height="' + (BODY_H - 16) + '" fill="rgba(255,255,255,0.20)" rx="0.65" />' +
+      '<text x="' + cx + '" y="' + (Math.max(RY + 10, RY + (BODY_H - fillH) * 0.35) + 4) + '" text-anchor="middle" font-size="6" font-weight="800" fill="rgba(20,20,22,0.90)">' + (labelOverride != null ? labelOverride : (pct + '%')) + '</text>' +
+    '</svg>'
+  );
+}
+
+var PAL_SAFE    = ['#065F46','#10B981','#6EE7B7'];
+var PAL_CAUTION = ['#854D0E','#EAB308','#FEF08A'];
+var PAL_ALERT   = ['#9A3412','#F97316','#FFEDD5'];
+var PAL_DANGER  = ['#991B1B','#EF4444','#FECACA'];
+var PAL_NONE    = ['#6B7280','#9CA3AF','#E5E7EB'];
+
+var BUDGET_CATS = [
+  { emoji:'🛒', name:'Super',      pct:100, frac:'100/100', pal:PAL_DANGER },
+  { emoji:'👕', name:'Ropa',       pct:95,  frac:'95/100',  pal:PAL_DANGER },
+  { emoji:'🏠', name:'Casa',       pct:93,  frac:'93/100',  pal:PAL_DANGER },
+  { emoji:'⛽', name:'Auto',       pct:50,  frac:'50/100',  pal:PAL_SAFE },
+  { emoji:'🍽️', name:'Comida',     pct:80,  frac:'40/50',   pal:PAL_ALERT },
+  { emoji:'💊', name:'Salud',      pct:89,  frac:'40/45',   pal:PAL_ALERT },
+  { emoji:'🏋️', name:'Gimnasio',   pct:50,  frac:'25/50',   pal:PAL_SAFE },
+  { emoji:'📱', name:'Telecom',    pct:0,   frac:'Fijar',   pal:PAL_NONE, noGoal:true, cylLabel:'$25' },
+  { emoji:'🎬', name:'Ocio',       pct:20,  frac:'20/100',  pal:PAL_SAFE },
+  { emoji:'🎁', name:'Regalos',    pct:20,  frac:'20/100',  pal:PAL_SAFE },
+  { emoji:'🧴', name:'Higiene',    pct:10,  frac:'20/200',  pal:PAL_SAFE },
+  { emoji:'🚕', name:'Taxi',       pct:75,  frac:'15/20',   pal:PAL_CAUTION },
+  { emoji:'🐾', name:'Mascotas',   pct:67,  frac:'10/15',   pal:PAL_CAUTION },
+  { emoji:'📦', name:'Otros',      pct:83,  frac:'10/12',   pal:PAL_ALERT },
+  { emoji:'💼', name:'Salario',    pct:53,  frac:'Disp: $637', pal:PAL_SAFE, income:true },
+  { emoji:'🏦', name:'Ahorro',     pct:0,   frac:'Fijar',   pal:PAL_NONE, noGoal:true, cylLabel:'—' },
+];
+
+var grid = document.getElementById('budgetGrid');
+if (grid) {
+  grid.innerHTML = BUDGET_CATS.map(function(c, i) {
+    var fracHtml = c.income
+      ? '<span class="mock-cyl-frac" style="color:#10B981; font-weight:800;">' + c.frac + '</span>'
+      : c.noGoal
+      ? '<span class="mock-cyl-frac" style="font-style:italic;">' + c.frac + '</span>'
+      : '<span class="mock-cyl-frac">' + c.frac + '</span>';
+    return (
+      '<div class="mock-budget-item">' +
+        '<span class="emoji">' + c.emoji + '</span>' +
+        glassCylinderSVG(c.pal, c.pct, i, c.cylLabel) +
+        '<span class="mock-cyl-name">' + c.name + '</span>' + fracHtml +
+      '</div>'
+    );
+  }).join('');
+}
+</script>
+
+</body>
+</html>
