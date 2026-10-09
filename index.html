@@ -3,79 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Neo Finanzas — Controla tus ingresos y gastos, sin complicarte</title>
-<meta name="description" content="Neo Finanzas es tu app de finanzas personales: registra ingresos y gastos, arma presupuestos, controla tus deudas y registra por voz — todo guardado 100% en tu dispositivo.">
+<meta name="theme-color" content="#04161E">
+<title>Neo Finanzas — Tu dinero, a la vista. Tus datos, solo tuyos.</title>
+<meta name="description" content="Neo Finanzas ordena tus ingresos, gastos y deudas en segundos. Sin cuentas, sin bancos conectados y sin servidores: todo se guarda cifrado en tu teléfono.">
 <link rel="canonical" href="https://neofinanzas.uk/">
-<meta property="og:title" content="Neo Finanzas — Controla tus ingresos y gastos, sin complicarte">
-<meta property="og:description" content="Registra ingresos y gastos, arma presupuestos, controla tus deudas y registra por voz — todo guardado 100% en tu dispositivo.">
+<meta property="og:title" content="Neo Finanzas — Tu dinero, a la vista. Tus datos, solo tuyos.">
+<meta property="og:description" content="Ingresos, gastos, presupuestos y deudas en un solo lugar. Sin cuenta, sin servidores, con cifrado en tu teléfono.">
 <meta property="og:url" content="https://neofinanzas.uk/">
 <meta property="og:type" content="website">
-<link rel="stylesheet" href="styles.css?v=7">
+<link rel="preload" href="fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
-
-<header class="site-header site-header--landing">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="headerBar" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1565A8"/><stop offset="100%" stop-color="#0D9488"/></linearGradient></defs></svg>
+<header class="site-header">
   <div class="site-header__inner">
-    <a href="#top" class="brand" style="text-decoration:none;">
-      <svg width="24" height="24" viewBox="0 0 130 130" aria-hidden="true">
-        <defs>
-          <linearGradient id="headerBar" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#1565A8" />
-            <stop offset="100%" stop-color="#0D9488" />
-          </linearGradient>
-        </defs>
-        <rect x="10" y="88" width="16" height="30" rx="5" fill="url(#headerBar)" />
-        <rect x="36" y="68" width="16" height="50" rx="5" fill="url(#headerBar)" />
-        <rect x="62" y="46" width="16" height="72" rx="5" fill="url(#headerBar)" />
-        <rect x="88" y="22" width="16" height="96" rx="5" fill="url(#headerBar)" />
-      </svg>
-      <span><span class="neo">Neo</span> <span class="finanzas">Finanzas</span></span>
-    </a>
+    <a href="#top" class="brand-link" style="text-decoration:none" aria-label="Neo Finanzas, inicio"><span class="brand"><svg width="30" height="30" viewBox="0 0 130 130" aria-hidden="true"><defs><linearGradient id="lg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FF5E4"/><stop offset="1" stop-color="#3B9AE0"/></linearGradient></defs><rect x="10" y="88" width="16" height="30" rx="5" fill="url(#lg1)"/><rect x="36" y="68" width="16" height="50" rx="5" fill="url(#lg1)"/><rect x="62" y="46" width="16" height="72" rx="5" fill="url(#lg1)"/><rect x="88" y="22" width="16" height="96" rx="5" fill="url(#lg1)"/></svg><span><span class="neo">Neo</span> <span class="finanzas">Finanzas</span></span></span></a>
     <nav class="site-nav" aria-label="Navegación principal">
       <a href="#funciones">Funciones</a>
       <a href="#como-funciona">Cómo funciona</a>
       <a href="#privacidad">Privacidad</a>
       <a href="privacidad.html">Legal</a>
-      <a href="#descargar" class="cta-mini">Descargar</a>
+      <a href="#descargar" class="cta-mini">Solicitar acceso</a>
     </nav>
   </div>
 </header>
 
-<main id="top" style="padding:0; max-width:none;">
+<main id="top" style="padding:0;max-width:none">
 
-  <!-- ══════════════════ HERO ══════════════════ -->
   <section class="hero">
-    <div class="landing-wrap">
+    <div class="wrap">
       <div>
-        <span class="hero-kicker">🔒 Tus datos nunca salen de tu dispositivo</span>
-        <h1 class="display">Sabe en qué se va tu dinero, <span class="accent">sin esfuerzo</span></h1>
-        <p class="hero-sub">Neo Finanzas registra tus ingresos y gastos, arma tu presupuesto y controla tus deudas — todo en segundos, todo guardado localmente en tu teléfono. Nada de bancos conectados, nada de anuncios, nada de datos enviados a servidores.</p>
+        <h1>Tu dinero, a la vista. <em>Tus datos, solo tuyos.</em></h1>
+        <p class="hero-sub">Neo Finanzas ordena tus ingresos, gastos y deudas en segundos. Sin cuentas, sin bancos conectados y sin servidores: todo vive cifrado en tu propio teléfono.</p>
         <div class="hero-ctas">
-          <a href="#descargar" class="btn btn--primary">Descargar la app</a>
-          <a href="#funciones" class="btn btn--ghost">Ver funciones</a>
+          <a href="#descargar" class="btn btn--mint"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.6v16.8a.9.9 0 001.4.8l13.2-8.4a.9.9 0 000-1.6L7.4 2.8A.9.9 0 006 3.6z"/></svg> Solicitar acceso</a>
+          <a href="#funciones" class="btn btn--line">Ver cómo funciona</a>
         </div>
-        <div class="hero-trust">
-          <span class="dot"></span> Sin registro de cuenta
-          <span class="dot"></span> Sin conexión bancaria
-          <span class="dot"></span> 19 idiomas
-        </div>
+        <ul class="hero-proof">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Cifrado AES-256</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Sin cuenta ni servidores</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Registro por voz</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> 19 idiomas</li>
+        </ul>
       </div>
-
-      <div class="hero-visual">
-        <div class="hero-chip hero-chip--1"><span class="ic">🏠</span><div><small>Casa</small>-$81.00</div></div>
-        <div class="hero-chip hero-chip--2"><span class="ic">💼</span><div><small>Salario</small>+$1,200.00</div></div>
-        <div class="hero-chip hero-chip--3"><span class="ic">🎙️</span><div><small>Por voz</small>Registrado</div></div>
-        <div class="hero-badge hero-badge--1">
-          <svg width="18" height="18" viewBox="0 0 130 130" aria-hidden="true">
-            <rect x="10" y="88" width="16" height="30" rx="5" fill="#FFFFFF" fill-opacity="0.95" />
-            <rect x="36" y="68" width="16" height="50" rx="5" fill="#FFFFFF" fill-opacity="0.95" />
-            <rect x="62" y="46" width="16" height="72" rx="5" fill="#FFFFFF" />
-            <rect x="88" y="22" width="16" height="96" rx="5" fill="#FFFFFF" />
-          </svg>
-        </div>
-        <div class="hero-badge hero-badge--2">🔒</div>
-        <div class="hero-visual__stage">
-        <div class="phone">
+      <div class="hero-stage">
+        <div class="toast toast--a"><div class="ic">⚠️</div><div><b>Pago mañana</b><span>Banco Nacional: $70.00 vence mañana.</span></div></div>
+                <div class="phone">
           <div class="phone__screen">
             <div class="phone__notch"></div>
             <div class="phone__header">
@@ -173,34 +147,41 @@
             </div>
           </div>
         </div>
-        </div>
+        <div class="toast toast--b"><div class="ic">🎙️</div><div><b>Registrado por voz</b><span>Restaurante · −$12.00</span></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════════════ FEATURES ══════════════════ -->
+  <section id="privacidad" class="promise">
+    <div class="wrap">
+      <h2>No hay servidor. No hay cuenta. <span>No hay nada que filtrar.</span></h2>
+      <div>
+        <ul class="promise-list">
+          <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 018 0v2.5"/><circle cx="12" cy="15.5" r="1.2" fill="currentColor"/></svg><div><b>Cifrado en tu dispositivo</b><span>Tus datos se guardan con AES-256. La clave vive en el almacén seguro del teléfono y nunca sale de él.</span></div></li>
+          <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3l18 18"/><path d="M10.6 6.2A9.8 9.8 0 0112 6c5 0 8.5 4.2 9.5 6-.5.9-1.5 2.3-3 3.5M6.6 7.6C4.6 8.9 3.3 10.7 2.5 12c1 1.8 4.5 6 9.5 6 1.5 0 2.8-.4 4-.9"/><path d="M9.9 9.9a3 3 0 004.2 4.2"/></svg><div><b>Cero rastreo</b><span>Sin publicidad, sin analítica y sin SDKs de terceros mirando lo que haces.</span></div></li>
+          <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14M10 7V4.5h4V7M7 7l.8 12a1.5 1.5 0 001.5 1.4h5.4a1.5 1.5 0 001.5-1.4L17 7"/></svg><div><b>Tú mandas sobre tus datos</b><span>Respáldalos o bórralos por completo desde Ajustes. Al desinstalar, todo desaparece.</span></div></li>
+        </ul>
+        <p style="margin:28px 0 0"><a href="privacidad.html" style="font-weight:700;font-size:1.05rem">Leer la política de privacidad completa →</a></p>
+      </div>
+    </div>
+  </section>
+
   <section id="funciones" class="features">
-    <div class="landing-wrap">
+    <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow">Funciones</span>
-        <h2>Todo lo que necesitas para ordenar tu dinero</h2>
-        <p>Sin curva de aprendizaje, sin configuraciones complicadas. Abres la app y ya sabes qué está pasando con tus finanzas.</p>
+        <h2>Todo lo que mueve tu dinero, en un solo lugar</h2>
+        <p>Sin curva de aprendizaje y sin configuraciones eternas. Abres la app y sabes exactamente cómo vas.</p>
       </div>
 
-      <!-- Registro rápido -->
-      <div class="feature-row">
-        <div class="feature-row__text">
-          <span class="eyebrow">Registro diario</span>
-          <h3>Cada ingreso y gasto, categorizado al instante</h3>
-          <p>Toca el botón, elige la categoría y listo. El panel principal se actualiza en el momento y te muestra exactamente cuánto llevas gastado por categoría, tu saldo y el mes en curso.</p>
-          <ul class="feature-row__list">
-            <li>Categorías predefinidas y personalizadas</li>
-            <li>Filtra por día, semana, mes, año o fechas exactas</li>
-            <li>Ícono y color propios para cada categoría</li>
-          </ul>
+      <article class="scene">
+        <div class="scene__text">
+          <h3>Cada ingreso y gasto, en su lugar al instante</h3>
+          <p>Toca, elige la categoría y listo. El panel se actualiza en ese momento y te muestra cuánto llevas gastado, tu saldo y el período en curso.</p>
+          <ul class="scene__list"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Categorías predefinidas y propias, con su ícono y color</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Filtra por día, semana, mes, año o fechas exactas</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Tu mes puede empezar el día que cobras: elige tu día 1</span></li></ul>
         </div>
-        <div class="feature-row__phone">
-          <div class="phone">
+        <div class="scene__stage stage--sky">          <div class="phone">
             <div class="phone__screen">
               <div class="phone__notch"></div>
               <div class="phone__header">
@@ -234,24 +215,17 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div></div>
+      </article>
+      <article class="scene scene--flip">
+        <div class="scene__text">
+          <h3>Ponle una meta a cada categoría y mírala llenarse</h3>
+          <p>Cada categoría tiene su cilindro: se llena a medida que gastas y cambia de verde a rojo según qué tan cerca estés de tu límite mensual.</p>
+          <ul class="scene__list"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Metas de gasto por categoría</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Metas de ahorro para tus depósitos</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Aviso escalonado al llegar al 51 %, 76 % y 91 %</span></li></ul>
         </div>
-      </div>
-
-      <!-- Presupuesto -->
-      <div class="feature-row reverse">
-        <div class="feature-row__text">
-          <span class="eyebrow">Presupuesto</span>
-          <h3>Ponle una meta a cada categoría y mira cómo se llena</h3>
-          <p>Cada categoría tiene su propio cilindro visual: se va llenando de color a medida que gastas, y cambia de verde a amarillo, naranja o rojo según qué tan cerca estés de tu límite mensual.</p>
-          <ul class="feature-row__list">
-            <li>Metas de gasto por categoría</li>
-            <li>Metas de ahorro para tus depósitos</li>
-            <li>Alertas cuando te acercas al límite</li>
-          </ul>
-        </div>
-        <div class="feature-row__phone">
-          <div class="phone">
+        <div class="scene__stage stage--deep">          <div class="phone">
             <div class="phone__screen">
               <div class="phone__notch"></div>
               <div class="phone__header">
@@ -274,24 +248,17 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div></div>
+      </article>
+      <article class="scene">
+        <div class="scene__text">
+          <h3>Ninguna deuda se te vuelve a olvidar</h3>
+          <p>Registra préstamos, tarjetas y pagos recurrentes. Neo Finanzas te dice cuánto debes, cuánto has pagado y cuántos días faltan para el próximo pago.</p>
+          <ul class="scene__list"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Recordatorios 3 días antes, 1 día antes y el mismo día</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Se repiten cada mes hasta que termines de pagar el crédito</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Barra de progreso y resumen anual por deuda</span></li></ul>
         </div>
-      </div>
-
-      <!-- Control de pagos -->
-      <div class="feature-row">
-        <div class="feature-row__text">
-          <span class="eyebrow">Control de pagos</span>
-          <h3>Nunca se te olvida una deuda o un pago recurrente</h3>
-          <p>Registra tus préstamos, tarjetas y pagos recurrentes. Neo Finanzas te muestra cuánto debes, cuánto has pagado y cuántos días faltan para tu próxima fecha de pago — con recordatorios automáticos.</p>
-          <ul class="feature-row__list">
-            <li>Barra de progreso por cada deuda</li>
-            <li>Recordatorios de pago programados</li>
-            <li>Resumen anual de deudas y pagos</li>
-          </ul>
-        </div>
-        <div class="feature-row__phone">
-          <div class="phone phone--tall">
+        <div class="scene__stage stage--mint">          <div class="phone phone--tall">
             <div class="phone__screen">
               <div class="phone__notch"></div>
               <div class="phone__header">
@@ -304,11 +271,11 @@
                   <div style="border-color:#4CAF8228; background:#4CAF8208;"><small>PAGADO</small><b style="color:#4CAF82;">$14.360</b></div>
                   <div style="border-color:#BFDBFE; background:#EFF6FF;"><small>PAGO/MES</small><b style="color:#3B82F6;">$845</b></div>
                 </div>
-                <div class="mock-alert-bar">⚠️ En 2 días · <b>Banco agrícola</b> · $70.00</div>
+                <div class="mock-alert-bar">⚠️ En 2 días · <b>Banco Nacional</b> · $70.00</div>
                 <div class="mock-debt-card">
                   <div class="mock-debt-top">
                     <div class="ic">🏦</div>
-                    <div><b>Banco agrícola</b><span>Préstamos</span></div>
+                    <div><b>Banco Nacional</b><span>Préstamos</span></div>
                     <span class="pct">9%</span>
                   </div>
                   <div class="mock-bar-track"><div class="mock-bar-fill" style="width:26%;"></div></div>
@@ -357,24 +324,17 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div></div>
+      </article>
+      <article class="scene scene--flip">
+        <div class="scene__text">
+          <h3>Te avisa antes de que sea un problema</h3>
+          <p>Neo Finanzas vigila dos cosas por ti: tus fechas de pago y tus límites de presupuesto. Cuando algo se acerca, lo sabes sin abrir la app.</p>
+          <ul class="scene__list"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Notificaciones locales: no dependen de internet</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Alertas de pago y de presupuesto en un mismo lugar</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Tú decides qué categorías vigilar</span></li></ul>
         </div>
-      </div>
-
-      <!-- Alertas y recordatorios -->
-      <div class="feature-row reverse">
-        <div class="feature-row__text">
-          <span class="eyebrow">Alertas inteligentes</span>
-          <h3>Te avisa antes de que se convierta en problema</h3>
-          <p>Neo Finanzas vigila dos cosas por ti: tus fechas de pago y tus límites de presupuesto. Cuando algo se acerca, te lo dice — sin que tengas que estar revisando la app a cada rato.</p>
-          <ul class="feature-row__list">
-            <li>Recordatorio de pago 3 días antes, 1 día antes y el día mismo</li>
-            <li>Aviso escalonado de presupuesto: 51%, 76% y 91% usado</li>
-            <li>Notificaciones locales — no dependen de internet</li>
-          </ul>
-        </div>
-        <div class="feature-row__phone">
-          <div class="phone">
+        <div class="scene__stage stage--blue">          <div class="phone phone--short">
             <div class="phone__screen">
               <div class="phone__notch"></div>
               <div class="phone__header">
@@ -394,7 +354,7 @@
                     <div class="dot" style="background:#FEF3C7;">⚠️</div>
                     <div class="body">
                       <div class="t1">Pago mañana <time>9:00 a.m.</time></div>
-                      <div class="t2">Banco agrícola: $70.00 vence mañana. Saldo: $3,700.00</div>
+                      <div class="t2">Banco Nacional: $70.00 vence mañana. Saldo: $3,700.00</div>
                     </div>
                   </div>
                   <div class="mock-notif">
@@ -414,24 +374,17 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div></div>
+      </article>
+      <article class="scene">
+        <div class="scene__text">
+          <h3>Dilo en voz alta y queda registrado</h3>
+          <p>«Gasté 12 dólares en el restaurante» y listo: monto, categoría y tipo detectados solos. Ideal cuando sales de una compra y no quieres escribir.</p>
+          <ul class="scene__list"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Reconocimiento de voz del propio teléfono</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Detecta monto, categoría y tipo automáticamente</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Funciona en varios idiomas</span></li></ul>
         </div>
-      </div>
-
-      <!-- Voz -->
-      <div class="feature-row">
-        <div class="feature-row__text">
-          <span class="eyebrow">Entrada por voz</span>
-          <h3>Dilo en voz alta y Neo Finanzas lo registra por ti</h3>
-          <p>"Gasté 12 dólares en el restaurante" — y listo, la transacción queda registrada en la categoría correcta, sin tocar el teclado. Ideal para cuando vienes saliendo de una compra y no quieres detenerte a escribir.</p>
-          <ul class="feature-row__list">
-            <li>Reconocimiento de voz nativo, sin apps de terceros</li>
-            <li>Detecta monto, categoría y tipo automáticamente</li>
-            <li>Disponible en varios idiomas</li>
-          </ul>
-        </div>
-        <div class="feature-row__phone">
-          <div class="phone">
+        <div class="scene__stage stage--ink">          <div class="phone">
             <div class="phone__screen">
               <div class="phone__notch"></div>
               <div class="phone__header">
@@ -463,24 +416,17 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div></div>
+      </article>
+      <article class="scene scene--flip">
+        <div class="scene__text">
+          <h3>El año completo en una sola pantalla</h3>
+          <p>Ingresos, egresos, balance y las categorías donde más se te fue el dinero. Un vistazo claro para planear mejor el año que viene.</p>
+          <ul class="scene__list"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Ingresos vs. egresos mes a mes</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Ranking de categorías de gasto</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Disponible en Panel, Presupuesto y Pagos</span></li></ul>
         </div>
-      </div>
-
-      <!-- Resumen anual -->
-      <div class="feature-row reverse">
-        <div class="feature-row__text">
-          <span class="eyebrow">Resumen anual</span>
-          <h3>Todo el año, resumido en una sola pantalla</h3>
-          <p>Ingresos totales, egresos totales, balance del año y en qué categorías se te fue más el dinero. Un vistazo completo para planear mejor el año que viene.</p>
-          <ul class="feature-row__list">
-            <li>Comparativa de ingresos vs. egresos por mes</li>
-            <li>Top de categorías de gasto</li>
-            <li>Disponible en Panel, Presupuesto y Control de Pagos</li>
-          </ul>
-        </div>
-        <div class="feature-row__phone">
-          <div class="phone">
+        <div class="scene__stage stage--cloud">          <div class="phone phone--short">
             <div class="phone__screen">
               <div class="phone__notch"></div>
               <div class="phone__header">
@@ -497,118 +443,55 @@
                 <div style="margin-top:10px;">
                   <div class="mock-cat-row"><span>🏠</span><b>Casa</b><span style="font-weight:800;">$2,340</span></div>
                   <div class="mock-cat-row"><span>🛒</span><b>Supermercado</b><span style="font-weight:800;">$1,890</span></div>
-                  <div class="mock-cat-row"><span>🎬</span><b>Entretenimiento</b><span style="font-weight:800;">$740</span></div>
+                  <div class="mock-cat-row"><span>🎬</span><b>Entretenimiento</b><span style="font-weight:800;">$740</span></div><div class="mock-cat-row"><span>🍽️</span><b>Restaurante</b><span style="font-weight:800;">$620</span></div><div class="mock-cat-row"><span>🚗</span><b>Automóvil</b><span style="font-weight:800;">$510</span></div><div class="mock-cat-row"><span>💊</span><b>Salud</b><span style="font-weight:800;">$430</span></div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
+          </div></div>
+      </article>
     </div>
   </section>
 
-  <!-- ══════════════════ CÓMO FUNCIONA ══════════════════ -->
   <section id="como-funciona" class="steps">
-    <div class="landing-wrap">
-      <div class="section-head">
-        <span class="eyebrow">Cómo funciona</span>
-        <h2>De cero a organizado en tres pasos</h2>
-        <p>No hay curva de aprendizaje. Así de simple es empezar.</p>
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom:0">
+        <h2>Organizado en tres pasos</h2>
+        <p>Así de simple es empezar.</p>
       </div>
       <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-num">1</div>
-          <h3>Registra</h3>
-          <p>Toca el botón +, habla o edita una transacción existente. Ingresa el monto y listo.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">2</div>
-          <h3>Categoriza</h3>
-          <p>Elige entre las categorías ya listas o crea las tuyas propias con tu propio ícono.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">3</div>
-          <h3>Visualiza</h3>
-          <p>Mira tu panel, tu presupuesto y tu resumen anual actualizarse al instante.</p>
-        </div>
+        <div class="step"><b>1</b><h3>Registra</h3><p>Toca +, habla o edita un movimiento. Escribe el monto y listo.</p></div>
+        <div class="step"><b>2</b><h3>Categoriza</h3><p>Usa las categorías listas o crea las tuyas con su propio ícono.</p></div>
+        <div class="step"><b>3</b><h3>Visualiza</h3><p>Tu panel, tu presupuesto y tu resumen anual se actualizan al instante.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════════════ PRIVACIDAD ══════════════════ -->
-  <section id="privacidad" class="trust-band">
-    <div class="landing-wrap">
-      <div class="trust-card">
-        <div>
-          <h2>Tus finanzas son tuyas. Punto.</h2>
-          <p>Neo Finanzas no tiene servidores, no vende tus datos porque no los tiene, y no necesita que te registres con un correo. Todo lo que ingresas se queda en tu propio teléfono.</p>
-          <a href="privacidad.html" class="btn btn--primary">Leer la Política de Privacidad completa</a>
-        </div>
-        <ul class="trust-list">
-          <li><span class="ic">🔒</span> Almacenamiento 100% local, ni un solo dato en la nube</li>
-          <li><span class="ic">🚫</span> Sin publicidad, sin SDKs de rastreo, sin Google Analytics</li>
-          <li><span class="ic">🏦</span> No requiere conectar tu cuenta bancaria</li>
-          <li><span class="ic">🗑️</span> Borra todos tus datos cuando quieras, en un toque</li>
-        </ul>
+  <section id="descargar" class="final">
+    <div class="wrap">
+      <h2>Empieza a ordenar tu dinero hoy</h2>
+      <p>Gratis, sin anuncios y sin cuentas que crear.</p>
+      <div class="hero-ctas">
+        <a href="mailto:soporte@neofinanzas.app?subject=Quiero%20Neo%20Finanzas" class="btn btn--mint"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.6v16.8a.9.9 0 001.4.8l13.2-8.4a.9.9 0 000-1.6L7.4 2.8A.9.9 0 006 3.6z"/></svg> Solicitar acceso</a>
+        <a href="terminos.html" class="btn btn--line">Términos de uso</a>
       </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════ CTA FINAL ══════════════════ -->
-  <section id="descargar" class="final-cta">
-    <div class="landing-wrap">
-      <h2>Empieza a organizar tus finanzas hoy</h2>
-      <p>Gratis, sin anuncios, sin cuentas que crear.</p>
-      <div class="hero-ctas" style="justify-content:center;">
-        <a href="mailto:soporte@neofinanzas.app?subject=Quiero%20Neo%20Finanzas" class="btn btn--primary">Solicitar acceso</a>
-        <a href="terminos.html" class="btn btn--ghost">Ver Términos de Uso</a>
-      </div>
+      <p class="soon">Próximamente en Google Play.</p>
     </div>
   </section>
 
 </main>
 
 <footer class="footer-landing">
-  <div class="landing-wrap">
+  <div class="wrap">
     <div>
-      <div class="brand">
-        <svg width="22" height="22" viewBox="0 0 130 130" aria-hidden="true">
-          <defs>
-            <linearGradient id="headerBarFooter" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#5FD9CC" />
-              <stop offset="100%" stop-color="#1565A8" />
-            </linearGradient>
-          </defs>
-          <rect x="10" y="88" width="16" height="30" rx="5" fill="url(#headerBarFooter)" />
-          <rect x="36" y="68" width="16" height="50" rx="5" fill="url(#headerBarFooter)" />
-          <rect x="62" y="46" width="16" height="72" rx="5" fill="url(#headerBarFooter)" />
-          <rect x="88" y="22" width="16" height="96" rx="5" fill="url(#headerBarFooter)" />
-        </svg>
-        <span><span>Neo</span> <span class="finanzas">Finanzas</span></span>
-      </div>
+      <span class="brand"><svg width="30" height="30" viewBox="0 0 130 130" aria-hidden="true"><defs><linearGradient id="lg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FF5E4"/><stop offset="1" stop-color="#3B9AE0"/></linearGradient></defs><rect x="10" y="88" width="16" height="30" rx="5" fill="url(#lg2)"/><rect x="36" y="68" width="16" height="50" rx="5" fill="url(#lg2)"/><rect x="62" y="46" width="16" height="72" rx="5" fill="url(#lg2)"/><rect x="88" y="22" width="16" height="96" rx="5" fill="url(#lg2)"/></svg><span><span class="neo">Neo</span> <span class="finanzas">Finanzas</span></span></span>
       <p class="tag">Una app de organización financiera personal. No es un banco, no procesa pagos ni ofrece asesoría de inversión.</p>
     </div>
-    <div class="footer-col">
-      <h4>Producto</h4>
-      <ul>
-        <li><a href="#funciones">Funciones</a></li>
-        <li><a href="#como-funciona">Cómo funciona</a></li>
-        <li><a href="#privacidad">Privacidad</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Legal</h4>
-      <ul>
-        <li><a href="terminos.html">Términos de Uso</a></li>
-        <li><a href="privacidad.html">Política de Privacidad</a></li>
-        <li><a href="mailto:soporte@neofinanzas.app">Contacto</a></li>
-      </ul>
-    </div>
+    <div class="footer-col"><h4>Producto</h4><ul>
+      <li><a href="#funciones">Funciones</a></li><li><a href="#como-funciona">Cómo funciona</a></li><li><a href="#privacidad">Privacidad</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul>
+      <li><a href="terminos.html">Términos de uso</a></li><li><a href="privacidad.html">Política de privacidad</a></li><li><a href="mailto:soporte@neofinanzas.app">Contacto</a></li></ul></div>
   </div>
-  <div class="footer-bottom">
-    <p>© 2026 Neo Finanzas. Todos los derechos reservados.</p>
-  </div>
+  <div class="footer-bottom">© 2026 Neo Finanzas. Todos los derechos reservados.</div>
 </footer>
 
 <script>
@@ -719,6 +602,5 @@ if (grid) {
   }).join('');
 }
 </script>
-
 </body>
 </html>

@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="theme-color" content="#04161E">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de Privacidad — Neo Finanzas</title>
 <meta name="description" content="Política de Privacidad de la aplicación Neo Finanzas.">
@@ -9,34 +10,21 @@
 <meta property="og:title" content="Política de Privacidad — Neo Finanzas">
 <meta property="og:url" content="https://neofinanzas.uk/privacidad.html">
 <meta property="og:type" content="website">
-<link rel="stylesheet" href="styles.css?v=7">
+<link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="headerBar" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1565A8"/><stop offset="100%" stop-color="#0D9488"/></linearGradient></defs></svg>
 <header class="site-header">
   <div class="site-header__inner">
-    <a href="index.html" class="brand" style="text-decoration:none;">
-      <svg width="24" height="24" viewBox="0 0 130 130" aria-hidden="true">
-        <defs>
-          <linearGradient id="headerBar" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#1565A8" />
-            <stop offset="100%" stop-color="#0D9488" />
-          </linearGradient>
-        </defs>
-        <rect x="10" y="88" width="16" height="30" rx="5" fill="url(#headerBar)" />
-        <rect x="36" y="68" width="16" height="50" rx="5" fill="url(#headerBar)" />
-        <rect x="62" y="46" width="16" height="72" rx="5" fill="url(#headerBar)" />
-        <rect x="88" y="22" width="16" height="96" rx="5" fill="url(#headerBar)" />
-      </svg>
-      <span><span class="neo">Neo</span> <span class="finanzas">Finanzas</span></span>
-    </a>
+    <a href="index.html" class="brand-link" style="text-decoration:none" aria-label="Neo Finanzas, inicio"><span class="brand"><svg width="30" height="30" viewBox="0 0 130 130" aria-hidden="true"><defs><linearGradient id="lgL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FF5E4"/><stop offset="1" stop-color="#3B9AE0"/></linearGradient></defs><rect x="10" y="88" width="16" height="30" rx="5" fill="url(#lgL)"/><rect x="36" y="68" width="16" height="50" rx="5" fill="url(#lgL)"/><rect x="62" y="46" width="16" height="72" rx="5" fill="url(#lgL)"/><rect x="88" y="22" width="16" height="96" rx="5" fill="url(#lgL)"/></svg><span><span class="neo">Neo</span> <span class="finanzas">Finanzas</span></span></span></a>
     <a href="index.html" class="back-home-link">← Inicio</a>
   </div>
 </header>
 
 <main>
   <h1 id="top">Política de Privacidad</h1>
-  <p class="meta">Última actualización: 13 de julio de 2026</p>
+  <p class="meta">Última actualización: 8 de octubre de 2026</p>
 
   <nav class="eyebrow-nav" aria-label="Documentos legales">
     <a href="terminos.html">Términos de Uso</a>
@@ -45,7 +33,7 @@
 
   <div class="callout callout--privacy">
     <span class="callout__icon" aria-hidden="true">🔒</span>
-    <span>Neo Finanzas almacena TODOS tus datos localmente en tu dispositivo. Nunca los enviamos a servidores externos.</span>
+    <span>Neo Finanzas guarda todos tus datos financieros cifrados en tu dispositivo. Nunca los enviamos a ningún servidor.</span>
   </div>
 
   <div class="intro">
@@ -59,7 +47,7 @@
       <li><a href="#s1">1. Responsable del Tratamiento</a></li>
       <li><a href="#s2">2. Datos que Recopilamos</a></li>
       <li><a href="#s3">3. Correo de Soporte</a></li>
-      <li><a href="#s4">4. Almacenamiento Local</a></li>
+      <li><a href="#s4">4. Almacenamiento Local y Cifrado</a></li>
       <li><a href="#s5">5. Copia de Seguridad</a></li>
       <li><a href="#s6">6. Permisos del Dispositivo</a></li>
       <li><a href="#s7">7. Servicios de Terceros</a></li>
@@ -84,7 +72,7 @@
 
   <section class="doc-section" id="s2">
     <h2>2. Datos que Recopilamos</h2>
-    <p>Neo Finanzas NO recopila ningún dato personal del usuario dentro de la App. Toda la información que ingresa en la App (transacciones, categorías, presupuestos, preferencias) se almacena exclusivamente en el almacenamiento local del dispositivo del usuario mediante tecnología AsyncStorage de React Native.</p>
+    <p>Neo Finanzas NO recopila ningún dato personal del usuario dentro de la App. Toda la información que ingresa en la App (transacciones, categorías, presupuestos, preferencias) se almacena exclusivamente en el almacenamiento local del dispositivo del usuario y se guarda cifrada (ver <a href="#s4">Sección 4</a>).</p>
     <p>Específicamente, la App almacena localmente:</p>
     <ul>
       <li>Registros de transacciones ingresados por el usuario.</li>
@@ -112,14 +100,15 @@
   </section>
 
   <section class="doc-section" id="s4">
-    <h2>4. Almacenamiento Local</h2>
-    <p>Todos los datos se almacenan en el almacenamiento interno del dispositivo. El usuario es el único responsable de proteger el acceso físico a su dispositivo. El desarrollador no tiene acceso a estos datos y no puede recuperarlos si el dispositivo es formateado o perdido.</p>
+    <h2>4. Almacenamiento Local y Cifrado</h2>
+    <p>Todos los datos se almacenan en el almacenamiento interno del dispositivo y se guardan <strong>cifrados con AES-256</strong>. La clave de cifrado se genera una sola vez en tu teléfono y se guarda en el almacén seguro del sistema (Android Keystore / iOS Keychain), separada de los datos; nunca sale del dispositivo ni se envía a ningún servidor.</p>
+    <p>La App desactiva el respaldo automático en la nube del sistema operativo para estos datos: si cambias de teléfono, necesitas usar la copia de seguridad manual descrita en la <a href="#s5">Sección 5</a>. El desarrollador no tiene acceso a tus datos ni a tu clave y no puede recuperarlos si el dispositivo es formateado o perdido. El usuario es responsable de proteger el acceso físico a su dispositivo.</p>
     <a class="back-to-top" href="#top">↑ Volver arriba</a>
   </section>
 
   <section class="doc-section" id="s5">
     <h2>5. Copia de Seguridad</h2>
-    <p>La función de copia de seguridad genera un archivo JSON en el dispositivo del usuario y permite compartirlo usando las herramientas nativas del sistema operativo (Google Drive, Dropbox, etc.). El desarrollador NO tiene acceso a dichos archivos de respaldo. El usuario es responsable de la seguridad de sus propios respaldos.</p>
+    <p>La función de copia de seguridad genera un archivo JSON en el dispositivo del usuario y permite compartirlo usando las herramientas nativas del sistema operativo (Google Drive, Dropbox, etc.). El desarrollador NO tiene acceso a dichos archivos de respaldo. <strong>El archivo de respaldo se genera sin cifrar</strong> para que puedas restaurarlo en cualquier teléfono, por lo que el usuario es responsable de guardarlo en un lugar seguro y de no compartirlo con terceros.</p>
     <a class="back-to-top" href="#top">↑ Volver arriba</a>
   </section>
 
@@ -129,6 +118,7 @@
     <ul>
       <li><strong>Micrófono:</strong> Exclusivamente para la función de registro de transacciones por voz, si el usuario la activa. La App no guarda ni almacena grabaciones de audio en ningún momento — vea la <a href="#s7">Sección 7</a> para el detalle de cómo se procesa el audio en el momento de usarlo.</li>
       <li><strong>Almacenamiento:</strong> Para leer/escribir archivos de copia de seguridad seleccionados explícitamente por el usuario.</li>
+      <li><strong>Notificaciones y vibración:</strong> Para mostrar recordatorios de pago y alertas de presupuesto. Se programan y se muestran localmente en tu dispositivo; no se usan servidores de notificaciones push ni se envía información a terceros. Puedes desactivarlas en cualquier momento desde los ajustes del sistema.</li>
     </ul>
     <a class="back-to-top" href="#top">↑ Volver arriba</a>
   </section>
@@ -136,6 +126,7 @@
   <section class="doc-section" id="s7">
     <h2>7. Servicios de Terceros</h2>
     <p>La App no integra servicios de analítica de terceros (Google Analytics, Firebase, etc.), ni redes publicitarias, ni SDKs de rastreo, y no transmite datos a ningún servidor propio.</p>
+    <p><strong>Consulta de disponibilidad:</strong> al abrirse, la App puede descargar un pequeño archivo público de configuración (alojado en GitHub) para comprobar si la versión sigue disponible o si existe un aviso importante. Esa consulta no envía ningún dato tuyo ni de tus finanzas; como en cualquier conexión a internet, el servicio que aloja el archivo puede ver tu dirección IP y datos técnicos estándar de la conexión, y se rige por su propia política de privacidad.</p>
     <p><strong>Excepción — Entrada de voz (opcional):</strong> Si usted activa voluntariamente la función de registrar transacciones hablando, el audio de su voz se envía al servicio de reconocimiento de voz configurado en su dispositivo (en la mayoría de los equipos Android, provisto por Google) únicamente para convertirlo en texto en tiempo real. Este envío ocurre por red mientras usted habla, no queda grabado ni almacenado por Neo Finanzas en ningún momento, y el tratamiento de ese audio por parte del proveedor del servicio de reconocimiento se rige por la política de privacidad de dicho proveedor. Si prefiere no usar esta función, puede registrar sus transacciones manualmente sin activar el micrófono.</p>
     <a class="back-to-top" href="#top">↑ Volver arriba</a>
   </section>
@@ -148,7 +139,7 @@
 
   <section class="doc-section" id="s9">
     <h2>9. Transferencias Internacionales</h2>
-    <p>Dado que no recopilamos datos personales dentro de la App, no realizamos transferencias internacionales de datos de ningún tipo.</p>
+    <p>Dado que no recopilamos datos personales dentro de la App, no realizamos transferencias internacionales de tus datos. Las únicas conexiones externas son el servicio de reconocimiento de voz del teléfono (opcional) y la consulta de disponibilidad descritas en la <a href="#s7">Sección 7</a>.</p>
     <a class="back-to-top" href="#top">↑ Volver arriba</a>
   </section>
 
@@ -167,13 +158,13 @@
 
   <section class="doc-section" id="s11">
     <h2>11. Retención de Datos</h2>
-    <p>Los datos permanecen en el dispositivo hasta que el usuario los elimina manualmente o desinstala la App. El desarrollador no retiene ninguna copia de los datos del usuario en ningún servidor.</p>
+    <p>Los datos permanecen en el dispositivo hasta que el usuario los elimina manualmente o desinstala la App; al desinstalarla se borran también los datos y la clave de cifrado. El desarrollador no retiene ninguna copia de los datos del usuario en ningún servidor.</p>
     <a class="back-to-top" href="#top">↑ Volver arriba</a>
   </section>
 
   <section class="doc-section" id="s12">
     <h2>12. Seguridad</h2>
-    <p>Los datos se almacenan en el espacio privado de la App dentro del dispositivo. La seguridad depende de las medidas de protección del propio dispositivo (código de acceso, biometría, cifrado del SO). Recomendamos:</p>
+    <p>Los datos se almacenan en el espacio privado de la App dentro del dispositivo, cifrados con AES-256 y con la clave protegida por el almacén seguro del sistema. Ningún sistema es infalible: la seguridad también depende de las medidas de protección del propio dispositivo (código de acceso, biometría, cifrado del SO). Recomendamos:</p>
     <ul>
       <li>Mantener el dispositivo con contraseña o bloqueo biométrico activado.</li>
       <li>Mantener el sistema operativo actualizado.</li>
