@@ -100,6 +100,7 @@ section[id] { scroll-margin-top: 68px; }
 .site-nav { display: flex; align-items: center; gap: 30px; }
 .site-nav a { color: var(--on-dark-2); font-size: 15px; font-weight: 500; transition: color 160ms var(--ease); }
 .site-nav a:hover { color: #FFFFFF; text-decoration: none; }
+.site-nav a[aria-current="page"] { color: #FFFFFF; box-shadow: inset 0 -2px 0 var(--mint); }
 .site-nav .cta-mini {
   background: var(--mint); color: var(--ink-950); font-weight: 700;
   padding: 10px 20px; border-radius: 999px;

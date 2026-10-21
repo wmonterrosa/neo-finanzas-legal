@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://neofinanzas.uk/sitemap.xml
